@@ -17,7 +17,7 @@
     <title>Layout Grid</title>
   </head>
   <body>
-    <div class="container">
+    <!--   <div class="container">
       <form action="#" class="form_filter">
         <div class="select_container">
           <label for="cars">Showing items:</label>
@@ -29,14 +29,14 @@
           </select>
         </div>
       </form>
-    </div>
-    <div class="container">
-      <ul class="products product-view-grid">
-        <li class="products__item">
+    </div> -->
+    <div class="container woocommerce">
+      <ul class="products product-view-grid products">
+        <!-- <li class="products__item">
           <span class="sales">Sales</span>
           <img src="./img/hoodie.jpg" class="product-img" alt="" />
           <p class="category">Uncategory</p>
-          <h3 class="product-title">Product Title</h3>
+          <h2 class="product-title">Product Title</h2>
           <span class="star">
             <i class="material-icons">star</i>
             <i class="material-icons">star</i>
@@ -50,41 +50,70 @@
           </p>
           <h3 class="product-price">Price $21</h3>
           <a href="#">Add to Card</a>
-        </li>
-        <li class="products__item">
-          <span class="sales">Sales</span>
-          <img src="./img/hoodie.jpg" class="product-img" alt="" />
-          <p class="category">Uncategory</p>
-          <h3 class="product-title">Product Title</h3>
-          <span class="star">
-            <i class="material-icons">star</i>
-            <i class="material-icons">star</i>
-          </span>
-          <p>
-            Description Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Dolorum, delectus?
-          </p>
-          <h3 class="product-price">Price $21</h3>
-          <a href="#">Add to Card</a>
-        </li>
-        <li class="products__item">
-          <span class="sales">Sales</span>
-          <img src="./img/hoodie.jpg" class="product-img" alt="" />
-          <p class="category">Uncategory</p>
-          <h3 class="product-title">Product Title</h3>
-          <span class="star">
-            <i class="material-icons">star</i>
-            <i class="material-icons">star</i>
-            <i class="material-icons">star</i>
-          </span>
-          <p>
-            Description Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Dolorum, delectus?
-          </p>
-          <h3 class="product-price">Price $21</h3>
-          <a href="#">Add to Card</a>
+        </li> -->
+        <!-- Woo style -->
+        <li class="product">
+          <a
+            href="#"
+            class="woocommerce-LoopProduct-link woocommerce-loop-product__link"
+          >
+            <span class="onsale">Sale!</span>
+            <img
+              width=""
+              height=""
+              src="http://testwp.local/wp-content/uploads/2022/02/beanie-with-logo-1-450x450.jpg"
+              class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+              alt=""
+              loading="lazy"
+              srcset=""
+              sizes=""
+              style=""
+            />
+            <h2 class="woocommerce-loop-product__title">Beanie</h2>
+            <span class="price">
+              <del aria-hidden="true">
+                <span class="woocommerce-Price-amount amount">
+                  <bdi
+                    ><span class="woocommerce-Price-currencySymbol">$</span
+                    >20.00</bdi
+                  >
+                </span>
+              </del>
+              <ins>
+                <span class="woocommerce-Price-amount amount">
+                  <bdi
+                    ><span class="woocommerce-Price-currencySymbol">$</span
+                    >18.00</bdi
+                  >
+                </span>
+              </ins>
+            </span>
+          </a>
+          <a
+            href="?add-to-cart=154"
+            data-quantity="1"
+            class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+            data-product_id="154"
+            data-product_sku="woo-beanie"
+            aria-label="Add “Beanie” to your cart"
+            rel="nofollow"
+            >Add to cart</a
+          >
         </li>
       </ul>
     </div>
   </body>
 </html>
+
+<!-- <span class="price">
+  <del aria-hidden="true">
+    <span class="woocommerce-Price-amount amount">
+      <bdi><span class="woocommerce-Price-currencySymbol">$</span>20.00</bdi>
+    </span>
+  </del>
+  <ins>
+    <span class="woocommerce-Price-amount amount">
+      <bdi><span class="woocommerce-Price-currencySymbol">$</span>18.00</bdi>
+    </span>
+  </ins>
+</span> -->
