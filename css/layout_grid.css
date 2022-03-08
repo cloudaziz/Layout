@@ -4,16 +4,17 @@
   box-sizing: border-box;
 }
 
-.container {
+.sp_container {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 30px;
 }
 
-.products {
+.sp_products {
   list-style: none;
   display: grid;
   grid-gap: 20px;
+  text-align: center;
   /*   &.product-view-list {
     grid-template-columns: 1fr;
 
@@ -35,130 +36,86 @@
       }
     }
   } */
-  /* &__item {
-      position: relative;
-      border: 1px solid $border-color;
-      .sales {
-        position: absolute;
-        width: 70px;
-        height: 70px;
-        right: -15px;
-        top: -15px;
-        background-color: tomato;
-        border-radius: 100%;
-        display: grid;
-        place-items: center;
-        color: #fff;
-      }
-
-      .category {
-        color: rgb(207, 207, 207);
-        font-weight: 700;
-        margin-top: 10px;
-      }
-
-      .product-title {
-        margin: 10px 0;
-        color: rgb(37, 40, 223);
-      }
-
-      .star {
-        display: inline-block;
-        color: tomato;
-        font-size: 0;
-        margin-bottom: 10px;
-      }
-
-      .product-price {
-        padding-block: 15px;
-      }
-
-      img {
-        width: 100%;
-      }
-
-      a {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-bottom: 20px;
-        text-decoration: none;
-        background-color: coral;
-        color: #fff;
-        border-radius: 5px;
-        &:hover {
-          background-color: darkgoldenrod;
-        }
-      }
-    }
-  }
-  .form_filter {
-    .select_container {
-      text-align: right;
-      position: relative;
-      &::after {
-        content: 'keyboard_arrow_down';
-        font-family: 'material icons';
-        font-size: 20px;
-        color: #666;
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-      }
-      select {
-        width: 200px;
-        height: 50px;
-        padding: 10px;
-        outline: none;
-        margin-left: auto;
-        font-size: 14px;
-        border: 2px dotted tomato;
-        background-color: antiquewhite;
-        appearance: none;
-        cursor: pointer;
-      }
-    } */
 }
-.products.product-view-grid {
+.sp_products.sp_product_view_grid {
   grid-template-columns: repeat(var(--item-size), 1fr);
 }
-
-.products .product {
-  display: flex;
-  flex-direction: column;
+.sp_products__item {
   position: relative;
+  border: 1px solid #f20000;
 }
-.products .product a {
-  color: black;
-  text-decoration: none;
-}
-.products .product a .onsale {
+.sp_products__item .sp_sales {
   position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: tomato;
-  border-radius: 50%;
-  top: -15px;
+  width: 70px;
+  height: 70px;
   right: -15px;
+  top: -15px;
+  background-color: tomato;
+  border-radius: 100%;
   display: grid;
   place-items: center;
+  color: #fff;
 }
-.products .product a img {
+.sp_products__item .sp_category {
+  color: #cfcfcf;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.sp_products__item .sp_product-title {
+  margin: 10px 0;
+  color: #2528df;
+}
+.sp_products__item .sp_star {
+  display: inline-block;
+  color: tomato;
+  font-size: 0;
+  margin-bottom: 10px;
+}
+.sp_products__item .sp_product_price {
+  padding-block: 15px;
+}
+.sp_products__item .sp_product_img {
   width: 100%;
 }
-.products .product a h2 {
-  font-weight: 100;
-  padding-block: 10px;
-}
-.products ins {
+.sp_products__item .sp_add_card {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
   text-decoration: none;
+  background-color: coral;
+  color: #fff;
+  border-radius: 5px;
 }
-.products .button {
-  vertical-align: left;
-  margin: 10px 0;
-  background-color: green;
-  padding: 20px;
+.sp_products__item .sp_add_card:hover {
+  background-color: darkgoldenrod;
+}
+
+.form_filter .select_container {
+  text-align: right;
+  position: relative;
+}
+.form_filter .select_container::after {
+  content: "keyboard_arrow_down";
+  font-family: "material icons";
+  font-size: 20px;
+  color: #666;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.form_filter .select_container select {
   width: 200px;
-  text-align: center;
+  height: 50px;
+  padding: 10px;
+  outline: none;
+  margin-left: auto;
+  font-size: 14px;
+  border: 2px dotted tomato;
+  background-color: antiquewhite;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
 }/*# sourceMappingURL=layout_grid.css.map */
