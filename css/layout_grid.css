@@ -4,47 +4,26 @@
   box-sizing: border-box;
 }
 
-.sp_container {
+.sp-grid-container {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 30px;
 }
 
-.sp_products {
+.sp-grid-products {
   list-style: none;
   display: grid;
   grid-gap: 20px;
   text-align: center;
-  /*   &.product-view-list {
-    grid-template-columns: 1fr;
-
-    .products__item {
-      display: flex;
-
-      .product-img {
-        flex: 1 0 60%;
-        background-color: #fff;
-        display: grid;
-        place-items: center;
-      }
-
-      .wrapper-content {
-        padding-left: 20px;
-        display: grid;
-        place-items: center;
-        flex: 1 0 40%;
-      }
-    }
-  } */
 }
-.sp_products.sp_product_view_grid {
+.sp-grid-products.sp-grid-product-view {
   grid-template-columns: repeat(var(--item-size), 1fr);
 }
-.sp_products__item {
+.sp-grid-products__item {
   position: relative;
   border: 1px solid #f20000;
 }
-.sp_products__item .sp_sales {
+.sp-grid-products__item .sp-grid-sales {
   position: absolute;
   width: 70px;
   height: 70px;
@@ -56,28 +35,28 @@
   place-items: center;
   color: #fff;
 }
-.sp_products__item .sp_category {
+.sp-grid-products__item .sp-grid-category {
   color: #cfcfcf;
   font-weight: 700;
   margin-top: 10px;
 }
-.sp_products__item .sp_product-title {
+.sp-grid-products__item .sp-grid-product-title {
   margin: 10px 0;
   color: #2528df;
 }
-.sp_products__item .sp_star {
+.sp-grid-products__item .sp-grid-star {
   display: inline-block;
   color: tomato;
   font-size: 0;
   margin-bottom: 10px;
 }
-.sp_products__item .sp_product_price {
+.sp-grid-products__item .sp-grid-product-price {
   padding-block: 15px;
 }
-.sp_products__item .sp_product_img {
+.sp-grid-products__item .sp-grid-product-img {
   width: 100%;
 }
-.sp_products__item .sp_add_card {
+.sp-grid-products__item .sp-grid-add-card {
   display: inline-block;
   padding: 10px 20px;
   margin-bottom: 20px;
@@ -86,15 +65,15 @@
   color: #fff;
   border-radius: 5px;
 }
-.sp_products__item .sp_add_card:hover {
+.sp-grid-products__item .sp-grid-add-card:hover {
   background-color: darkgoldenrod;
 }
 
-.form_filter .select_container {
+.form-filter .select-container {
   text-align: right;
   position: relative;
 }
-.form_filter .select_container::after {
+.form-filter .select-container::after {
   content: "keyboard_arrow_down";
   font-family: "material icons";
   font-size: 20px;
@@ -105,7 +84,7 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
-.form_filter .select_container select {
+.form-filter .select-container select {
   width: 200px;
   height: 50px;
   padding: 10px;

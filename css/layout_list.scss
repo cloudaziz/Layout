@@ -9,24 +9,24 @@
 // }
 
 $border-color: lightblue;
-.sp_container {
+.sp-list-container {
   max-width: 600px;
   margin: 0 auto;
   padding-top: 30px;
 }
 
-.sp_product-view-list {
+.sp-list-product-view {
   list-style: none;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr;
 
-  .sp_products__item {
+  .sp-list-products__item {
     border: 1px solid $border-color;
     display: flex;
 
-    .sp_product-img {
-      flex: 1 0 60%;
+    .sp-list-product-img {
+      flex: 0 0 60%;
       background-color: #fff;
       display: grid;
       place-items: center;
@@ -35,25 +35,25 @@ $border-color: lightblue;
       }
     }
 
-    .sp_wrapper-content {
-      flex: 1 0 40%;
+    .sp-list-wrapper-content {
+      flex: 0 0 40%;
       padding-left: 20px;
       display: grid;
       place-items: center;
 
-      .product-title {
+      .sp-list-product-title {
         margin: 15px 0;
         color: coral;
       }
-      .product-price {
+      .sp-list-product-price {
         padding-block: 15px;
       }
 
-      .add-to-card {
+      .sp-list-add-to-card {
+        margin-bottom: 20px;
         a {
           display: inline-block;
           padding: 10px 20px;
-          margin-bottom: 20px;
           text-decoration: none;
           background-color: coral;
           color: #fff;
