@@ -19,12 +19,12 @@ $border-color: rgb(242, 0, 0);
   list-style: none;
   display: grid;
   grid-gap: 20px;
-  // grid-template-columns: repeat(var(--item-size), 1fr);
+  grid-template-columns: repeat(var(--item-size), 1fr);
   text-align: center;
 
-  &.sp-grid-product-view {
-    grid-template-columns: repeat(var(--item-size), 1fr);
-  }
+  // &.sp-grid-product-view {
+  //   grid-template-columns: repeat(var(--item-size), 1fr);
+  // }
   &__item {
     position: relative;
     border: 1px solid $border-color;

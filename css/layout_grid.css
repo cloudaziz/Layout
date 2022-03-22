@@ -14,10 +14,8 @@
   list-style: none;
   display: grid;
   grid-gap: 20px;
-  text-align: center;
-}
-.sp-grid-products.sp-grid-product-view {
   grid-template-columns: repeat(var(--item-size), 1fr);
+  text-align: center;
 }
 .sp-grid-products__item {
   position: relative;
