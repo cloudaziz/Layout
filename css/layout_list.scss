@@ -15,13 +15,13 @@ $border-color: lightblue;
   padding-top: 30px;
 }
 
-.sp-list-product-view {
+.sp-list-products-view {
   list-style: none;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr;
 
-  .sp-list-products__item {
+  &__item {
     border: 1px solid $border-color;
     display: flex;
 

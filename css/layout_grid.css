@@ -10,18 +10,18 @@
   padding-top: 30px;
 }
 
-.sp-grid-products {
+.sp-grid-products-view {
   list-style: none;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(var(--item-size), 1fr);
   text-align: center;
 }
-.sp-grid-products__item {
+.sp-grid-products-view__item {
   position: relative;
   border: 1px solid #f20000;
 }
-.sp-grid-products__item .sp-grid-sales {
+.sp-grid-products-view__item .sp-grid-sales {
   position: absolute;
   width: 70px;
   height: 70px;
@@ -33,28 +33,28 @@
   place-items: center;
   color: #fff;
 }
-.sp-grid-products__item .sp-grid-category {
+.sp-grid-products-view__item .sp-grid-category {
   color: #cfcfcf;
   font-weight: 700;
   margin-top: 10px;
 }
-.sp-grid-products__item .sp-grid-product-title {
+.sp-grid-products-view__item .sp-grid-product-title {
   margin: 10px 0;
   color: #2528df;
 }
-.sp-grid-products__item .sp-grid-star {
+.sp-grid-products-view__item .sp-grid-star {
   display: inline-block;
   color: tomato;
   font-size: 0;
   margin-bottom: 10px;
 }
-.sp-grid-products__item .sp-grid-product-price {
+.sp-grid-products-view__item .sp-grid-product-price {
   padding-block: 15px;
 }
-.sp-grid-products__item .sp-grid-product-img {
+.sp-grid-products-view__item .sp-grid-product-img {
   width: 100%;
 }
-.sp-grid-products__item .sp-grid-add-card {
+.sp-grid-products-view__item .sp-grid-add-card {
   display: inline-block;
   padding: 10px 20px;
   margin-bottom: 20px;
@@ -63,7 +63,7 @@
   color: #fff;
   border-radius: 5px;
 }
-.sp-grid-products__item .sp-grid-add-card:hover {
+.sp-grid-products-view__item .sp-grid-add-card:hover {
   background-color: darkgoldenrod;
 }
 

@@ -10,42 +10,42 @@
   padding-top: 30px;
 }
 
-.sp-list-product-view {
+.sp-list-products-view {
   list-style: none;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 1fr;
 }
-.sp-list-product-view .sp-list-products__item {
+.sp-list-products-view__item {
   border: 1px solid lightblue;
   display: flex;
 }
-.sp-list-product-view .sp-list-products__item .sp-list-product-img {
+.sp-list-products-view__item .sp-list-product-img {
   flex: 0 0 60%;
   background-color: #fff;
   display: grid;
   place-items: center;
 }
-.sp-list-product-view .sp-list-products__item .sp-list-product-img img {
+.sp-list-products-view__item .sp-list-product-img img {
   width: 100%;
 }
-.sp-list-product-view .sp-list-products__item .sp-list-wrapper-content {
+.sp-list-products-view__item .sp-list-wrapper-content {
   flex: 0 0 40%;
   padding-left: 20px;
   display: grid;
   place-items: center;
 }
-.sp-list-product-view .sp-list-products__item .sp-list-wrapper-content .sp-list-product-title {
+.sp-list-products-view__item .sp-list-wrapper-content .sp-list-product-title {
   margin: 15px 0;
   color: coral;
 }
-.sp-list-product-view .sp-list-products__item .sp-list-wrapper-content .sp-list-product-price {
+.sp-list-products-view__item .sp-list-wrapper-content .sp-list-product-price {
   padding-block: 15px;
 }
-.sp-list-product-view .sp-list-products__item .sp-list-wrapper-content .sp-list-add-to-card {
+.sp-list-products-view__item .sp-list-wrapper-content .sp-list-add-to-card {
   margin-bottom: 20px;
 }
-.sp-list-product-view .sp-list-products__item .sp-list-wrapper-content .sp-list-add-to-card a {
+.sp-list-products-view__item .sp-list-wrapper-content .sp-list-add-to-card a {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -53,6 +53,6 @@
   color: #fff;
   border-radius: 5px;
 }
-.sp-list-product-view .sp-list-products__item .sp-list-wrapper-content .sp-list-add-to-card a:hover {
+.sp-list-products-view__item .sp-list-wrapper-content .sp-list-add-to-card a:hover {
   background-color: darkgoldenrod;
 }/*# sourceMappingURL=layout_list.css.map */
