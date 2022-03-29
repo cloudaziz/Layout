@@ -45,7 +45,6 @@
   height: auto;
 }
 .sp-card-grid__item__content {
-  flex: 0 0 70%;
   text-align: center;
   padding: 0 20px;
 }
