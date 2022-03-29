@@ -7,7 +7,7 @@
 }
 
 .sp-wrapper {
-  width: 1400px;
+  width: 600px;
   margin: 0 auto;
   padding-block: 20px;
 }
@@ -19,6 +19,8 @@
 }
 .sp-card-grid__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #cecece;
 }
 .sp-card-grid__item__sale {
@@ -33,10 +35,17 @@
   display: grid;
   place-items: center;
 }
-.sp-card-grid__item__image {
+.sp-card-grid__item__images {
+  background-color: #fff;
   width: 100%;
+  text-align: center;
+}
+.sp-card-grid__item__images__image {
+  max-width: 100%;
+  height: auto;
 }
 .sp-card-grid__item__content {
+  flex: 0 0 70%;
   text-align: center;
   padding: 0 20px;
 }

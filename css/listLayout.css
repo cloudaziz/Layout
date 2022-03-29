@@ -35,8 +35,8 @@
   place-items: center;
 }
 .sp-card-list__item__images {
+  background-color: #eaeff3;
   flex: 0 0 50%;
-  border: 1px solid green;
   display: grid;
   place-items: center;
 }
