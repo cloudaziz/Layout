@@ -19,7 +19,7 @@
 }
 .sp-grid-products-view__item {
   position: relative;
-  border: 1px solid #f20000;
+  border: 1px solid rgb(242, 0, 0);
 }
 .sp-grid-products-view__item .sp-grid-sales {
   position: absolute;
@@ -34,13 +34,13 @@
   color: #fff;
 }
 .sp-grid-products-view__item .sp-grid-category {
-  color: #cfcfcf;
+  color: rgb(207, 207, 207);
   font-weight: 700;
   margin-top: 10px;
 }
 .sp-grid-products-view__item .sp-grid-product-title {
   margin: 10px 0;
-  color: #2528df;
+  color: rgb(37, 40, 223);
 }
 .sp-grid-products-view__item .sp-grid-star {
   display: inline-block;

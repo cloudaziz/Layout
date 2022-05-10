@@ -1,0 +1,284 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+/* .wp-block-create-block-revisedblock {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+} */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: 1px solid red;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  .grid-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}
+.sp-team {
+  background-color: #f7f8fc;
+
+  border-radius: 6px;
+
+  &.rounded {
+    border-radius: 150px 150px 150px 150px;
+  }
+
+  &.two-rounded {
+    border-radius: 120px 0px 120px 0px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    // padding: 20px;
+
+    &__member {
+      height: 40%;
+      &--height {
+        max-height: 300px;
+        margin-top: -10px;
+        margin-bottom: 25px;
+        // border: 1px solid red;
+      }
+
+      &__picture {
+        // border-radius: 6px;
+        width: 100%;
+        // height: auto;
+        // object-fit: contain;
+        // vertical-align: center;
+        // &--round {
+        //   border-radius: 120px 0px 120px 120px;
+        // }
+
+        &--circle {
+          /* mask-image: url('./../img/polygon.svg');
+          mask-repeat: no-repeat;
+          -webkit-mask-position: 50% 20%;
+          mask-size: 200px 200px; */
+          clip-path: circle(30% at 50% 50%);
+          margin-top: -20px;
+        }
+        &--polygon {
+          mask-image: url('./../img/polygon.svg');
+          mask-repeat: no-repeat;
+          mask-position: top center;
+          -webkit-mask-position: top center;
+          mask-size: 50% 50%;
+        }
+
+        &--angle {
+          mask-image: url('./../img/angle.svg');
+          mask-repeat: no-repeat;
+          mask-position: top right;
+          -webkit-mask-position: top right;
+          mask-size: 60% 77%;
+        }
+        // border-radius: 50% 50% 0% 0%;
+
+        // clip-path: circle(40%);
+        // clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
+      }
+    }
+
+    &__body {
+      height: 60%;
+      text-align: center;
+      padding: 30px;
+
+      &__name {
+        font-size: 24px !important;
+        font-weight: 500 !important;
+        margin-bottom: 15px;
+        color: #151515;
+        margin: 0;
+
+        background: linear-gradient(
+          51deg,
+          #7141f1 50%,
+          #4d6bd8 75%,
+          #3183e2 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &__position {
+        font-size: 14px;
+        color: #9e9e9e;
+        margin-bottom: 25px;
+      }
+
+      &__about {
+        font-size: 14px;
+        color: #9e9e9e;
+        margin-bottom: 25px;
+      }
+
+      &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__link {
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          border: 1px solid #e5e5e5;
+
+          i {
+            font-size: 16px;
+            background: linear-gradient(
+              51deg,
+              #7141f1 50%,
+              #4d6bd8 75%,
+              #3183e2 100%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          &:not(:last-child) {
+            margin-right: 7px;
+          }
+
+          &:hover {
+            background-color: rgb(207, 210, 31);
+            i {
+              color: black;
+            }
+          }
+
+          color: #000;
+          text-decoration: none;
+          // display: inline-block;
+
+          display: grid;
+          place-items: center;
+          // background-color: #000;
+        }
+      }
+    }
+  }
+}
+
+.img-box {
+  width: 600px;
+  border: 1px solid red;
+  margin: 0 auto;
+
+  &__figure {
+    &__image {
+      mask-image: url('./../img/angle.svg');
+      mask-repeat: no-repeat;
+      mask-position: top right;
+      -webkit-mask-position: top right;
+      mask-size: 180px 180px;
+    }
+  }
+}
+
+.services {
+  margin: 20px 0;
+  padding: 100px 0 150px 0;
+  background-color: #f7f8fc;
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.service-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  &__card {
+    text-align: center;
+    background-color: #f7f8fc;
+    box-shadow: -15px -15px 20px rgba(255, 255, 255, 0.8),
+      15px 15px 20px rgba(57, 65, 124, 0.08);
+
+    padding: 30px;
+    border-radius: 12px;
+    &.transform-item {
+      transform: translateY(30px);
+    }
+    // &:nth-child(even) {
+    //   transform: translateY(30px);
+    // }
+
+    &:hover {
+      box-shadow: -2px -2px 5px rgb(255 255 255 / 90%),
+        2px 2px 4px rgb(57 65 124 / 20%);
+    }
+
+    &__head {
+      margin-bottom: 30px;
+      .material-icons {
+        font-size: 76px;
+
+        background: linear-gradient(
+          51deg,
+          #7141f1 50%,
+          #4d6bd8 75%,
+          #3183e2 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    &__body {
+      h3 {
+        color: #1e3876;
+        font-size: 26px;
+        line-height: 29px;
+        margin-bottom: 30px;
+      }
+      p {
+        color: #1e3876;
+        margin-bottom: 30px;
+        line-height: 26px;
+      }
+      a {
+        color: #6f40f1;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.sp-team {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: gray;
+}
