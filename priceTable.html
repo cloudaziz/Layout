@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/priceTable.css">
+    <title>Price Table</title>
+</head>
+
+<body>
+
+    <div class="sp-container">
+
+        <div class="top-header">
+
+            <p class="top-header__sub-title">Pricing Table</p>
+            <h2 class="top-header__title">Purchase a licence</h2>
+            <!-- First Toggle -->
+            <div class="top-header__button-box">
+                <div id="top-header__animated-btn"></div>
+                <button type="button" class="top-header__button-box__toggle-btn" id="leftBtn">Yearly</button>
+                <button type="button" class="top-header__button-box__toggle-btn right" id="rightBtn">Lifetime</button>
+            </div><!-- ./button-box -->
+            <div class="top-header__info">
+                <p>A yearly licence entitles you to <a href="#">1 year of updates and support.</a><br> Your
+                    subscription
+                    will
+                    auto-renew each year until cancelled.</p>
+            </div>
+
+        </div><!-- ./top-header -->
+
+        <div class="sp-grid-container">
+
+            <div class="sp-price-table">
+
+                <div class="sp-price-table__head">
+                    <h3 class="sp-price-table__head__title">Starter</h3>
+                    <p class="sp-price-table__head__price"><span class="supdollar">$</span><span>75</span></p>
+                </div>
+
+                <div class="sp-price-table__body">
+
+                    <ul class="sp-price-table__body__content">
+                        <li class="sp-price-table__body__content__items">
+                            <span class="material-icons sp-price-table__body__content__items__item">
+                                check_circle_outline
+                            </span>
+                            Single Domain / Site
+                        </li>
+                        <li class="sp-price-table__body__content__items">
+                            <span class="material-icons sp-price-table__body__content__items__item">
+                                check_circle_outline
+                            </span>
+                            Premium Support
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="sp-price-table__footer">
+                    <a href="#" class="sp-price-table__footer__btn">BUY NOW</a>
+                </div>
+
+            </div>
+
+            <div class="sp-price-table sp-price-table--business">
+
+                <div class="sp-price-table__head">
+                    <h3 class="sp-price-table__head__title">Business</h3>
+                    <p class="sp-price-table__head__price"><span class="supdollar">$</span><span>75</span></p>
+                    <span class="sp-price-table__head__saveprice">47% Save</span>
+                </div>
+
+                <div class="sp-price-table__body">
+
+                    <ul class="sp-price-table__body__content sp-price-table__body__content">
+                        <li class="sp-price-table__body__content__items sp-price-table__body__content__items--white">
+                            <span class="material-icons sp-price-table__body__content__items__item">
+                                check_circle_outline
+                            </span>
+                            Five Domains / Site
+                        </li>
+                        <li class="sp-price-table__body__content__items sp-price-table__body__content__items--white">
+                            <span class="material-icons sp-price-table__body__content__items__item">
+                                check_circle_outline
+                            </span>
+                            Premium Support
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="sp-price-table__footer">
+                    <a href="#" class="sp-price-table__footer__btn sp-price-table__footer__btn--red">BUY NOW</a>
+                </div>
+
+            </div>
+
+            <div class="sp-price-table">
+
+                <div class="sp-price-table__head">
+                    <h3 class="sp-price-table__head__title">Developer</h3>
+                    <p class="sp-price-table__head__price"><span class="supdollar">$</span><span>75</span></p>
+                </div>
+
+                <div class="sp-price-table__body">
+
+                    <ul class="sp-price-table__body__content">
+                        <li class="sp-price-table__body__content__items">
+                            <span class="material-icons sp-price-table__body__content__items__item">
+                                check_circle_outline
+                            </span>
+                            Unlimited Domain / Site
+                        </li>
+                        <li class="sp-price-table__body__content__items">
+                            <span class="material-icons sp-price-table__body__content__items__item">
+                                check_circle_outline
+                            </span>
+                            Premium Support
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="sp-price-table__footer">
+                    <a href="#" class="sp-price-table__footer__btn">BUY NOW</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <script src="./js/toggle.js"></script> -->
+    <script>
+        let btn = document.getElementById('top-header__animated-btn');
+        let leftBtn = document.getElementById('leftBtn');
+        let rightBtn = document.getElementById('rightBtn');
+
+        leftBtn.addEventListener('click', () => {
+            btn.style.left = '0';
+            leftBtn.style.color = 'white';
+            rightBtn.style.color = '#5f00d3';
+        });
+        rightBtn.addEventListener('click', () => {
+            // btn.style.left = '110px';
+            btn.style.left = '175px';
+            rightBtn.style.color = 'white';
+            leftBtn.style.color = '#5f00d3';
+        });
+    </script>
+</body>
+
+</html>

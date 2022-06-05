@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3f4f5;
+}
+
+.sp-container {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.sp-grid-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 60px;
+}
+
+hr {
+  margin: 50px 0;
+}
+
+.top-header {
+  text-align: center;
+  &__sub-title {
+    color: red;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-size: 52px;
+    letter-spacing: 2px;
+  }
+
+  &__info {
+    margin-bottom: 60px;
+    color: #565656;
+    line-height: 1.5;
+
+    a {
+      color: #565656;
+    }
+  }
+
+  &__button-box {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    margin: 50px auto;
+    border-radius: 30px;
+    background: #fff;
+
+    &__toggle-btn {
+      width: 160px;
+      height: 100%;
+      color: #5f00d3;
+      //   padding: 10px 0;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      outline: none;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 600;
+      //   border-radius: 30px;
+    }
+  }
+}
+
+.sp-price-table {
+  background-color: white;
+  padding: 60px 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 5%);
+
+  &--business {
+    background-color: #5f00d3;
+    color: white;
+  }
+
+  &__head {
+    margin-bottom: 40px;
+    &__title {
+      font-weight: normal;
+      font-size: 42px;
+      margin-bottom: 10px;
+      &::before {
+        font-family: 'Material Icons';
+        content: '\e5cd';
+        vertical-align: middle;
+      }
+    }
+
+    &__price {
+      font-size: 62px;
+      .supdollar {
+        font-size: 28px;
+        vertical-align: 23px;
+      }
+    }
+
+    &__saveprice {
+      font-size: 16px;
+      color: #d7a931;
+      margin-top: 20px;
+    }
+  }
+
+  &__body {
+    margin: 40px;
+
+    &__content {
+      text-align: left;
+      list-style: none;
+
+      &__items {
+        line-height: 3;
+        color: #8f9090;
+        &--white {
+          color: white;
+        }
+
+        &__item {
+          font-size: 22px;
+          vertical-align: middle;
+          margin-right: 15px;
+        }
+      }
+    }
+    .business-feature {
+      li {
+        color: white;
+      }
+    }
+  }
+
+  &__footer {
+    &__btn {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      background-color: #5f00d3;
+      border-radius: 30px;
+      padding: 10px 80px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #fe356e;
+      }
+
+      &--red {
+        background-color: #fe356e;
+
+        &:hover {
+          background-color: #d7a931;
+        }
+      }
+    }
+  }
+}
+
+/* Toggle Button Start */
+
+#leftBtn {
+  color: white;
+}
+
+#top-header__animated-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 170px;
+  height: 100%;
+  background: #5f00d3;
+  border-radius: 30px;
+  transition: 0.5s;
+}

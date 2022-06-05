@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/toggle.css">
+    <title>Toggle Button</title>
+</head>
+
+<body>
+    <!-- First Toggle -->
+    <!-- <div class="form-box"> -->
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" id="leftBtn">Left</button>
+        <button type="button" class="toggle-btn right" id="rightBtn">Right</button>
+    </div>
+    <!-- </div> -->
+
+    <hr>
+
+    <div class="price-table-wrapper">
+
+        <div class="toggle-container">
+            <span>Anually</span>
+            <span>
+                <input type="checkbox" name="toggle" id="toggle" unchecked>
+                <label for="toggle">
+                    <div class="ball"></div>
+                </label>
+            </span>
+            <span>Monthly</span>
+        </div>
+
+        <div class="flex" id="flexy">
+            <div class="price-box">
+                <h4>Master</h4>
+                <p>
+                    <span class="monthly">Monthly: 39.00</span>
+                    <span class="annually">Annually: 100.00</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!-- 49.31min -->
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const flexy = document.getElementById('flexy');
+
+        toggle.addEventListener('change', e => {
+            flexy.classList.toggle('show-monthly')
+        })
+    </script>
+
+    <script src="./js/toggle.js"></script>
+</body>
+
+</html>

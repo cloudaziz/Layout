@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        PrimeNum: for (let outerNumber = 2; outerNumber <= 10; outerNumber++) { //3
+            for (let innerNumber = 2; innerNumber < outerNumber; innerNumber++) {
+                if (outerNumber % innerNumber == 0) {
+                    continue PrimeNum;
+                }
+            }
+            console.log(outerNumber)
+        }
+
+    </script>
+</body>
+
+</html>

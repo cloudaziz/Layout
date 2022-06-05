@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sp-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  // border: 1px solid rgb(234, 234, 234);
+}
+
+.sp-grid-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  // display: grid;
+  // grid-auto-flow: column;
+  // gap: 20px;
+}
+
+hr {
+  margin: 60px 0;
+  border-top: 4px double rgb(218, 218, 218);
+}
+
+/* Testimonial-1 CSS Start */
+/* ====================================================================  */
+.sp-testimonial {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__left {
+    display: grid;
+    place-items: center;
+
+    &__content {
+      &__head {
+        margin-bottom: 50px;
+        &__title {
+          font-size: 32px;
+        }
+        &__sub-title {
+          margin-bottom: 30px;
+          color: #6f40f1;
+        }
+      }
+
+      &__arrow {
+        display: flex;
+        &__right,
+        &__left {
+          color: #6f40f1;
+          border: 1px solid #6f40f1;
+          width: 60px;
+          height: 60px;
+          display: grid;
+          place-items: center;
+          border-radius: 50%;
+          transition: all 1s ease;
+
+          &:hover {
+            cursor: pointer;
+            background-color: #6f40f1;
+          }
+        }
+        &__right {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  &__right {
+    text-align: center;
+    display: grid;
+    place-items: center;
+
+    &__content {
+      width: 500px;
+      &__images {
+        margin-bottom: 60px;
+        position: relative;
+        &__cercle {
+          position: absolute;
+          top: -25px;
+          left: 150px;
+          width: 60px;
+          height: 60px;
+          background-color: rgb(242, 242, 242);
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+
+          .material-icons {
+            transform: rotate(180deg);
+            font-size: 40px;
+            background: linear-gradient(
+              51deg,
+              #7141f1 50%,
+              #4d6bd8 75%,
+              #3183e2 100%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+        &__image {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+      &__description {
+        color: #8c8c8c;
+        margin-bottom: 30px;
+        line-height: 1.8;
+      }
+      &__info {
+        p {
+          color: #8c8c8c;
+        }
+        h3 {
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}
+/* Testimonial-2 CSS Start */
+/* ====================================================================  */
+.sp-testimonial-2 {
+  background: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 5%);
+  padding: 60px 30px;
+  border-bottom: 5px solid #562dd4;
+
+  &__description {
+    color: #8c8c8c;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  &__images {
+    overflow: hidden;
+    &__image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__ratings {
+    color: #562dd4;
+    margin-bottom: 10px;
+  }
+  &__title {
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* Testimonial-3 CSS Start */
+/* ====================================================================  */
+.sp-testimonial-3 {
+  background: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 5%);
+  padding: 60px 30px;
+  border-bottom: 5px solid #562dd4;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &__images {
+      overflow: hidden;
+      &__image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    &__title {
+      margin-left: 20px;
+      h3 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__body {
+    &__description {
+      p {
+        color: #8c8c8c;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+/* Testimonial-3 CSS Start */
+/* ====================================================================  */
+.sp-testimonial-4 {
+  background: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 5%);
+  border-bottom: 5px solid #562dd4;
+
+  &__head {
+    margin-bottom: 60px;
+    &__images {
+      &__image {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: -4px;
+      }
+    }
+    &__rectangle {
+      width: 100%;
+      height: 20px;
+      background-color: #f1f0f0;
+      position: relative;
+
+      &__cercle {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        left: 40px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        color: white;
+        background-color: #7141f1;
+        display: grid;
+        place-items: center;
+
+        .material-icons {
+          font-size: 42px;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &__body {
+    margin: 40px;
+    p {
+      color: #8c8c8c;
+      line-height: 1.8;
+    }
+  }
+
+  &__foot {
+    margin: 40px;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+}
