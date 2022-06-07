@@ -156,6 +156,54 @@
             leftBtn.style.color = '#5f00d3';
         });
     </script>
+
+    <script>
+
+        const withToolbarButton = createHigherOrderComponent((BlockEdit) => {
+            return (props) => {
+
+                // If current block is not allowed
+                if (!enableToolbarButtonOnBlocks.includes(props.name)) {
+                    return (
+                        <BlockEdit {...props} />
+                    );
+                }
+
+                const { attributes, setAttributes } = props;
+                const { paragraphAttribute } = attributes;
+
+                return (
+                    <Fragment>
+                        <BlockControls group="block">
+                            <ToolbarGroup>
+                                <ToolbarButton
+                                    icon="format-status"
+                                    label={__('Custom Button', 'core-block-custom-attributes')}
+                                    isActive={paragraphAttribute === 'custom'}
+                                    onClick={() => {
+                                        if (paragraphAttribute === 'custom') {
+                                            setAttributes({ paragraphAttribute: false })
+                                        } else {
+                                            setAttributes({ paragraphAttribute: 'custom' })
+                                        }
+                                    }}
+                                />
+                            </ToolbarGroup>
+                        </BlockControls>
+                        <BlockEdit {...props} />
+                    </Fragment>
+                );
+            };
+        }, 'withToolbarButton');
+        wp.hooks.addFilter(
+            'editor.BlockEdit',
+            'custom-attributes/with-toolbar-button',
+            withToolbarButton
+        );
+
+    </script>
+
+
 </body>
 
 </html>

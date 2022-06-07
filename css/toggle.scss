@@ -98,3 +98,37 @@ body {
     }
   }
 }
+
+/*  */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.container .mix:nth-child(odd) {
+  background-color: rgb(164, 244, 250);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .mix {
+  display: grid;
+  grid-auto-flow: column;
+  // grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: repeat(20, 1fr);
+  // text-align: center;
+  // padding: 30px;
+  // border: 1px solid red;
+
+  .item {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(60, 60, 60);
+  }
+}
+
+// .container .mix:nth-child(3n + 3) {
+//   background-color: aqua;
+// }
