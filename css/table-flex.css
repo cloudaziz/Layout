@@ -14,6 +14,7 @@ ul {
 }
 
 .flex-container {
+  border: 2px solid rgba(0, 0, 0, 0.2);
   display: inline-flex;
   flex-direction: column;
 }
@@ -21,6 +22,9 @@ ul {
   display: flex;
 }
 .flex-container__items__item {
+  display: flex;
+}
+.flex-container__items__item li {
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding: 20px;
 }/*# sourceMappingURL=table-flex.css.map */
