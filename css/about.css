@@ -33,20 +33,18 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.about-grid-wrapper__box {
+  padding-right: 80px;
+}
 .about-grid-wrapper__box h2 {
   font-size: 42px;
 }
-
-.about-left-side {
-  padding-right: 80px;
-}
-.about-left-side p {
+.about-grid-wrapper__box p {
   color: #535e7f;
   font-size: 18px;
   line-height: 1.7;
 }
-
-.about-inner-grid-wrapper {
+.about-grid-wrapper__box__inner-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;

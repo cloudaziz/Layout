@@ -31,31 +31,26 @@ body {
 .about-grid-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  //   grid-auto-flow: column;
-  //   gap: 10px;
+
   &__box {
-    // border: 1px solid green;
+    padding-right: 80px;
 
     h2 {
       font-size: 42px;
     }
+
+    p {
+      color: #535e7f;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    &__inner-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
   }
-}
-
-.about-left-side {
-  padding-right: 80px;
-
-  p {
-    color: #535e7f;
-    font-size: 18px;
-    line-height: 1.7;
-  }
-}
-
-.about-inner-grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
 }
 
 .about-right-side {

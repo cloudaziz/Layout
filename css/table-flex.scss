@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+.table-container {
+  width: 1200px;
+  margin: 100px auto;
+}
+.flex-container {
+  display: inline-flex;
+  flex-direction: column;
+
+  &__items {
+    display: flex;
+
+    &__item {
+      border: 2px solid rgb(0 0 0 / 0.2);
+      padding: 20px;
+    }
+  }
+}
