@@ -35,6 +35,12 @@ body {
   &__box {
     padding-right: 80px;
 
+    &--right {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
     h2 {
       font-size: 42px;
     }
@@ -53,26 +59,19 @@ body {
   }
 }
 
-.about-right-side {
-  //   padding: 30px;
+.about-right-side__box {
+  text-align: center;
+
+  border-radius: 10px;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  place-items: center;
+  padding: 3.5em;
 
-  &__box {
-    text-align: center;
-
-    border-radius: 10px;
-
-    display: grid;
-    place-items: center;
-    padding: 3.5em;
-
-    &__content-group {
-      P {
-        font-size: 42px;
-        font-weight: 500;
-      }
+  &__content-group {
+    P {
+      font-size: 42px;
+      font-weight: 500;
     }
   }
 }
