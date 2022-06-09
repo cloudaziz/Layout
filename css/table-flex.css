@@ -27,4 +27,13 @@ ul {
 .flex-container__items__item li {
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding: 20px;
+}
+
+/* ======== sp-flex-table start ======== */
+.sp-flex-table {
+  display: inline-flex;
+}
+.sp-flex-table__item {
+  border: 1px solid red;
+  padding: 20px;
 }/*# sourceMappingURL=table-flex.css.map */

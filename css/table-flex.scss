@@ -28,3 +28,14 @@ ul {
     }
   }
 }
+
+/* ======== sp-flex-table start ======== */
+.sp-flex-table {
+  display: inline-flex;
+  // flex-direction: row;
+
+  &__item {
+    border: 1px solid red;
+    padding: 20px;
+  }
+}
