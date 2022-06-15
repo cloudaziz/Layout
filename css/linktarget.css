@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.wrapper {
+  width: 1400px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.tabs .tab {
+  background-color: #5f00d3;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 30px;
+  cursor: pointer;
+}
+.tabs .tab:hover {
+  background-color: #d7a931;
+}
+.tabs .tab.active {
+  background-color: #fe356e;
+}
+
+[data-package-content] {
+  display: none;
+}
+
+.active[data-package-content] {
+  display: block;
+}
+
+.tab-content {
+  margin: 30px;
+}
+
+/* ================ */
+.sp-grid-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 60px;
+}
+
+.sp-price-table {
+  background-color: white;
+  padding: 60px 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+}
+.sp-price-table--business {
+  background-color: #5f00d3;
+  color: white;
+}
+.sp-price-table__head {
+  margin-bottom: 40px;
+}
+.sp-price-table__head__title {
+  font-weight: normal;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+.sp-price-table__head__price {
+  font-size: 62px;
+}
+.sp-price-table__head__price .supdollar {
+  font-size: 28px;
+  vertical-align: 23px;
+}
+.sp-price-table__head__saveprice {
+  font-size: 16px;
+  color: #d7a931;
+  margin-top: 20px;
+}
+.sp-price-table__body {
+  margin: 40px;
+}
+.sp-price-table__body__content {
+  text-align: left;
+  list-style: none;
+}
+.sp-price-table__body__content__items {
+  line-height: 3;
+  color: #8f9090;
+}
+.sp-price-table__body__content__items--white {
+  color: white;
+}
+.sp-price-table__body__content__items__item {
+  font-size: 22px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.sp-price-table__body .business-feature li {
+  color: white;
+}
+.sp-price-table__footer__btn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #5f00d3;
+  border-radius: 30px;
+  padding: 10px 80px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+.sp-price-table__footer__btn:hover {
+  background-color: #fe356e;
+}
+.sp-price-table__footer__btn--red {
+  background-color: #fe356e;
+}
+.sp-price-table__footer__btn--red:hover {
+  background-color: #d7a931;
+}/*# sourceMappingURL=linktarget.css.map */

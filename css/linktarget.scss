@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+.wrapper {
+  width: 1400px;
+  // height: 600px;
+  margin: auto;
+  margin-top: 50px;
+  // border: 2px solid tomato;
+  // overflow: scroll;
+}
+.tabs {
+  list-style: none;
+  // background-color: tomato;
+  display: flex;
+  justify-content: center;
+  .tab {
+    background-color: #5f00d3;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 30px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #d7a931;
+    }
+
+    &.active {
+      background-color: #fe356e;
+    }
+  }
+}
+
+[data-package-content] {
+  display: none;
+}
+.active[data-package-content] {
+  display: block;
+}
+
+.tab-content {
+  margin: 30px;
+}
+
+/* ================ */
+.sp-grid-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 60px;
+}
+
+.sp-price-table {
+  background-color: white;
+  padding: 60px 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 5%);
+
+  &--business {
+    background-color: #5f00d3;
+    color: white;
+  }
+
+  &__head {
+    margin-bottom: 40px;
+    &__title {
+      font-weight: normal;
+      font-size: 42px;
+      margin-bottom: 10px;
+      // &::before {
+      //   font-family: 'Material Icons';
+      //   content: '\e5cd';
+      //   vertical-align: middle;
+      // }
+    }
+
+    &__price {
+      font-size: 62px;
+      .supdollar {
+        font-size: 28px;
+        vertical-align: 23px;
+      }
+    }
+
+    &__saveprice {
+      font-size: 16px;
+      color: #d7a931;
+      margin-top: 20px;
+    }
+  }
+
+  &__body {
+    margin: 40px;
+
+    &__content {
+      text-align: left;
+      list-style: none;
+
+      &__items {
+        line-height: 3;
+        color: #8f9090;
+        &--white {
+          color: white;
+        }
+
+        &__item {
+          font-size: 22px;
+          vertical-align: middle;
+          margin-right: 15px;
+        }
+      }
+    }
+    .business-feature {
+      li {
+        color: white;
+      }
+    }
+  }
+
+  &__footer {
+    &__btn {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      background-color: #5f00d3;
+      border-radius: 30px;
+      padding: 10px 80px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #fe356e;
+      }
+
+      &--red {
+        background-color: #fe356e;
+
+        &:hover {
+          background-color: #d7a931;
+        }
+      }
+    }
+  }
+}
