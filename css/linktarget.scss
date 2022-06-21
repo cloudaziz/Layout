@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +17,9 @@ body {
   // border: 2px solid tomato;
   // overflow: scroll;
 }
+
+/* Tab section start */
+
 .tabs {
   list-style: none;
   // background-color: tomato;
@@ -50,7 +55,7 @@ body {
   margin: 30px;
 }
 
-/* ================ */
+/* ======= price table start ========= */
 .sp-grid-container {
   display: grid;
   grid-auto-flow: column;
@@ -75,11 +80,6 @@ body {
       font-weight: normal;
       font-size: 42px;
       margin-bottom: 10px;
-      // &::before {
-      //   font-family: 'Material Icons';
-      //   content: '\e5cd';
-      //   vertical-align: middle;
-      // }
     }
 
     &__price {
@@ -106,7 +106,7 @@ body {
 
       &__items {
         line-height: 3;
-        color: #8f9090;
+        color: #000;
         &--white {
           color: white;
         }

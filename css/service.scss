@@ -68,9 +68,15 @@
         margin-bottom: 30px;
         line-height: 26px;
       }
+    }
+
+    &__readmore {
       a {
         color: #6f40f1;
         text-decoration: none;
+        &:hover {
+          color: black;
+        }
       }
     }
   }

@@ -53,7 +53,10 @@
   margin-bottom: 30px;
   line-height: 26px;
 }
-.service-area__card__body a {
+.service-area__card__readmore a {
   color: #6f40f1;
   text-decoration: none;
+}
+.service-area__card__readmore a:hover {
+  color: black;
 }/*# sourceMappingURL=service.css.map */

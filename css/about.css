@@ -58,6 +58,7 @@ body {
 .about-right-side__box {
   text-align: center;
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.0588235294);
   display: grid;
   place-items: center;
   padding: 3.5em;
