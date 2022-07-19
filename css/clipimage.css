@@ -31,13 +31,15 @@ body {
 .wrapper .grid-container {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
 .sp-team {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
   background-color: #f7f8fc;
   border-radius: 6px;
+  overflow: hidden;
 }
 .sp-team.rounded {
   border-radius: 150px 150px 150px 150px;
@@ -113,37 +115,37 @@ body {
 .sp-team__wrapper__body__about {
   font-size: 14px;
   color: #9e9e9e;
-  margin-bottom: 25px;
 }
-.sp-team__wrapper__body__socials {
+.sp-team__wrapper__socials {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
-.sp-team__wrapper__body__socials__link {
+.sp-team__wrapper__socials__link {
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #a1a1a1;
   color: #000;
   text-decoration: none;
   display: grid;
   place-items: center;
 }
-.sp-team__wrapper__body__socials__link i {
+.sp-team__wrapper__socials__link .material-icons {
   font-size: 16px;
   background: linear-gradient(51deg, #7141f1 50%, #4d6bd8 75%, #3183e2 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.sp-team__wrapper__body__socials__link:not(:last-child) {
+.sp-team__wrapper__socials__link:not(:last-child) {
   margin-right: 7px;
 }
-.sp-team__wrapper__body__socials__link:hover {
+.sp-team__wrapper__socials__link:hover {
   background-color: rgb(207, 210, 31);
 }
-.sp-team__wrapper__body__socials__link:hover i {
+.sp-team__wrapper__socials__link:hover i {
   color: black;
 }
 

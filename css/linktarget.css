@@ -13,16 +13,19 @@ body {
   width: 1400px;
   margin: auto;
   margin-top: 50px;
+  text-align: center;
 }
 
 /* Tab section start */
 .tabs {
   list-style: none;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+  background-color: #5f00d3;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .tabs .tab {
-  background-color: #5f00d3;
   color: #fff;
   font-weight: 700;
   letter-spacing: 2px;

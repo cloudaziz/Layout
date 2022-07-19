@@ -16,6 +16,7 @@ body {
   margin-top: 50px;
   // border: 2px solid tomato;
   // overflow: scroll;
+  text-align: center;
 }
 
 /* Tab section start */
@@ -23,10 +24,14 @@ body {
 .tabs {
   list-style: none;
   // background-color: tomato;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+  background-color: #5f00d3;
+  border-radius: 8px;
+  overflow: hidden;
+
   .tab {
-    background-color: #5f00d3;
+    // background-color: #5f00d3;
     color: #fff;
     font-weight: 700;
     letter-spacing: 2px;
