@@ -1,0 +1,73 @@
+:root {
+  --purple: tomato;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--purple);
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 54px;
+  text-transform: uppercase;
+}
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #e78af7; */
+}
+
+#gameboard {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--purple);
+  font-size: 120px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+.box:nth-child(3n) {
+  border-right: none;
+}
+.box:nth-child(6) ~ .box {
+  border-bottom: none;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--purple);
+  color: white;
+  border-color: var(--purple);
+  font-size: 18px;
+  transition: 200ms transform;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}/*# sourceMappingURL=index.css.map */
