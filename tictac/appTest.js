@@ -12,8 +12,7 @@ boxes.forEach((box) => {
       if (!spaces[id]) {
         spaces[id] = currentPlayer;
         event.target.innerText = currentPlayer;
-
-        currentPlayer = currentPlayer === player_x ? player_y : player_x;
+        // currentPlayer = currentPlayer === player_x ? player_y : player_x;
         console.dir(spaces[id]);
       }
     },
