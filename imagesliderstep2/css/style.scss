@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  .slider-container {
+    position: relative;
+
+    .arrow {
+      background-color: green;
+      padding: 5px;
+      border-radius: 30px;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: grid;
+      margin: auto;
+
+      .fs {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      &.left {
+        left: -55px;
+      }
+      &.right {
+        right: -55px;
+      }
+    }
+  }
+
+  .carousel {
+    border: 2px solid rgb(254, 0, 0);
+    height: 400px;
+    overflow: hidden;
+
+    .slider {
+      list-style: none;
+      height: 100%;
+      display: flex;
+      // transform: translateX(-800px);
+      transition: transform 0.8s;
+
+      li {
+        flex: 0 0 200px;
+        border: 1px solid rgb(228, 228, 228);
+        display: grid;
+        place-items: center;
+      }
+    }
+  }
+
+  .control {
+    ul {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      transform: translate(-50%);
+      list-style-type: none;
+      display: flex;
+      gap: 5px;
+      li {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #000;
+        text-align: center;
+        cursor: pointer;
+
+        background-color: #333;
+        // color: #fff;
+        border-radius: 50%;
+
+        &.selected {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

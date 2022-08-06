@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dropdown Menu</title>
+</head>
+
+<body>
+    <!-- 1st dropdown Menu -->
+    <header class="header">
+        <a href="#" class="logo">LOGO</a>
+        <nav>
+            <ul class="menu-items">
+                <li><a href="#" class="menu-item">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="menu-item">Dropdown Menu</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown dropdown-right">
+                            <a href="#" class="menu-item">Item 1 <span>&#43;</span></a>
+                            <ul class="menu-right">
+                                <li><a href="#" class="menu-item">Item 1.1</a></li>
+                                <li><a href="#" class="menu-item">Item 1.2</a></li>
+                                <li class="dropdown dropdown-right">
+                                    <a href="#" class="menu-item">Item 1.3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="menu-item">Item 2</a></li>
+                        <li><a href="#" class="menu-item">Item 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="menu-item">About</a></li>
+                <li><a href="#" class="menu-item">Blog</a></li>
+                <li><a href="#" class="menu-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 2nd dropdown Menu -->
+    <div class="nav-wrapper">
+        <ul>
+            <li>home</li>
+            <li>About</li>
+            <li>Services
+                <ul>
+                    <li>Marketing Bangladesh</li>
+                    <li>Design
+                        <ul>
+                            <li>SEO</li>
+                            <li>Web
+                                <ul>
+                                    <li>home</li>
+                                    <li>services
+                                        <ul>
+                                            <li>Agrabad</li>
+                                            <li>Chittagong</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Graphics</li>
+                            <li>Interior</li>
+                        </ul>
+                    </li>
+                    <li>Branding</li>
+                </ul>
+            </li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

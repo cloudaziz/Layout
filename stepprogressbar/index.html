@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <a href="#" class="clickme">Click Me</a> -->
+
+        <ul class="progressbar">
+            <li class="active">Step test 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+            <li>Step 4</li>
+        </ul>
+        <div class="button-group">
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+        </div>
+
+    </div>
+    <script>
+        let progressbar = document.querySelector('.progressbar');
+        let circles = progressbar.querySelectorAll('li');
+        let currentIndex = 1;
+        // let cercels = Array.from(progressbar.querySelectorAll('li'));
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+
+        next.addEventListener('click', (e) => {
+            currentIndex++;
+            if (currentIndex > circles.length) {
+                currentIndex = circles.length;
+            }
+            circles.forEach((circle, indx) => {
+                if (indx < currentIndex) {
+                    circle.classList.add('active')
+                }
+                else {
+                    circle.classList.remove('active')
+                }
+
+            })
+
+            console.log(currentIndex);
+        })
+        prev.addEventListener('click', (e) => {
+            currentIndex--;
+            if (currentIndex < 1) {
+                currentIndex = 1;
+            }
+            circles.forEach((circle, indx) => {
+                if (indx < currentIndex) {
+                    circle.classList.add('active')
+                }
+                else {
+                    circle.classList.remove('active')
+                }
+
+            })
+
+            console.log(currentIndex);
+        })
+    </script>
+</body>
+
+</html>

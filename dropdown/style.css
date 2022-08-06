@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #122331;
+  position: relative;
+  max-width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+.header .logo {
+  font-size: 2rem;
+}
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+.header ul {
+  list-style: none;
+}
+.header .menu-items {
+  display: flex;
+  align-items: center;
+}
+.header .menu-items li {
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease-in-out;
+}
+.header .menu-items li:hover {
+  background-color: orangered;
+}
+.header .menu-items .dropdown {
+  position: relative;
+}
+.header .menu-items .dropdown:hover .dropdown-menu {
+  top: 34px;
+  opacity: 1;
+  visibility: visible;
+}
+.header .menu-items .dropdown-menu {
+  position: absolute;
+  background-color: #122331;
+  width: 100%;
+  top: 50px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.header .menu-items .dropdown-menu .menu-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .menu-items .dropdown .menu-right {
+  position: absolute;
+  background-color: #122331;
+  width: 100%;
+  top: 0;
+  left: 110%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.header .menu-items .dropdown .dropdown-right:hover .menu-right {
+  left: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 2nd dropdown menu */
+.nav-wrapper {
+  max-width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2%;
+  background-color: #34495e;
+}
+.nav-wrapper ul {
+  list-style: none;
+  display: flex;
+}
+.nav-wrapper ul ul {
+  display: none;
+}
+.nav-wrapper ul ul ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.nav-wrapper ul li {
+  background: #e74c3c;
+  width: 170px;
+  border: 0.5px solid #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+}
+.nav-wrapper ul li:hover {
+  background-color: #34495e;
+}
+.nav-wrapper ul li:hover > ul {
+  display: block;
+}
+
+/* .wrapper ul {
+  list-style: none;
+  display: flex;
+}
+.wrapper ul li {
+  background: #262626;
+  width: 170px;
+  //   border: 1px solid #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  //   float: left;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.wrapper ul li:hover {
+  background: orangered;
+} *//*# sourceMappingURL=style.css.map */

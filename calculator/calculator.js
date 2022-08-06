@@ -1,16 +1,16 @@
 let display = document.getElementById('display');
 // making Array
-// let buttons = Array.from(document.getElementsByClassName('button'));
+let buttons = Array.from(document.getElementsByClassName('button'));
 
 // Or you can create a array with button
-let buttons = document.querySelectorAll('.button');
+/* let buttons = document.querySelectorAll('.button');
 let items = [];
 for (let i = 0; i < buttons.length; i++) {
   items.push(buttons[i]);
-}
+} */
 // console.log(items);
 
-items.forEach((button) => {
+buttons.forEach((button) => {
   button.addEventListener('click', (event) => {
     switch (event.target.innerText) {
       case 'C':
